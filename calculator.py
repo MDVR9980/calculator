@@ -7,11 +7,12 @@
         print("2. Subtraction")
         print("3. Multiplication")
         print("4. Division")
-        print("5. Departure")
+        print("5. Power")
+        print("6. Departure")
 
-        choice = input("Enter your choice (1-5):")
+        choice = input("Enter your choice (1-6):")
 
-        if choice == '5':
+        if choice == '6':
             print("Thanks! Bye.")
             break
 
@@ -33,8 +34,12 @@
                 print("Answer:", result)
             else:
                 print("Error! Division by zero is not possible.")
+        elif choice == '5':
+            result = num1 ** num2
+            print("Answer:", result)
+            
         else:
-            print("Invalid selection! Please enter an integer between 1 and 5.")
+            print("Invalid selection! Please enter an integer between 1 and 6.")
 
         print("-----------------------")
 
